@@ -27,7 +27,8 @@
 ]{geometry}
 
 %Headers and footers
-
+\newcommand\hmmax{0}
+\newcommand\bmmax{0}
 
 %Title
 \usepackage[foot]{amsaddr}
@@ -38,6 +39,11 @@
 \usepackage{xspace}
 \usepackage[all]{xy}
 \usepackage{tikz-cd}
+\usepackage{xcolor}
+
+%\usepackage{makeidx}
+\makeindex
+
 \makeatletter
 \def\@textbottom{\vskip \z@ \@plus 1pt}
 \let\@texttop\relax
@@ -156,6 +162,11 @@
 \DeclareMathOperator\coker{coker}
 \DeclareMathOperator\Cone{Cone}
 \DeclareMathOperator\diam{diam}
+\DeclareMathOperator\Tor{Tor}
+\DeclareMathOperator\Ch{Ch}
+\DeclareMathOperator\Hom{Hom}
+\DeclareMathOperator\Ho{Ho}
+\DeclareMathOperator\End{End}
 
 \makeatletter
 \newcommand{\colim@}[2]{%
@@ -218,7 +229,7 @@
 \newtheorem{remark}[theorem]{Remark}
 \newtheorem{examples}[theorem]{Examples}
 \newtheorem{example}[theorem]{Example}
-\newtheorem{problem}[theorem]{Problem}
+\newtheorem{problem}{Problem}[chapter]
 \newtheoremstyle{ex} 		             	 		%Stylename
   	{}	                                     		%Space above
   	{}	                                    		%Space below
@@ -280,6 +291,7 @@
 \newcommand{\Ubcal}{\bm{\mathcal{U}}}
 \renewcommand{\det}{\mathrm{det}}
 \newcommand{\ab}{\mathrm{ab}}
+\newcommand{\op}{\mathrm{op}}
 
 \usepackage{trimclip}
 \newcommand{\crop}[1]{\clipbox*{0pt -.5ex {\width} {.7\height}}{#1}}

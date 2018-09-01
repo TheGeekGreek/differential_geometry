@@ -1,31 +1,63 @@
 \input{header.tex}
 
 \begin{document}
+%titlepage
+\pagecolor{blue}
+%\pagecolor{ao(english)}
+\color{white}
+
+\begin{titlepage}
+	\begin{center}
+	\fontsize{18}{18}{\textsc{Yannis B\"ahni}}
+	\rule{\linewidth}{0.5mm} \\[0.4cm]
+	\fontsize{60}{60}{\textsc{Differential Topology and Differential Geometry with Applications to General Relativity}}\\
+	%\vspace{2mm}
+	%\fontsize{28}{28}{\textsc{In Applications and Examples}}
+	\rule{\linewidth}{0.5mm} \\[1.5cm]
+	\end{center}
+\end{titlepage}
+%reset colors
+\nopagecolor
+\color{black} 
+
+%Roman page numbering
 \frontmatter
+
+%Half-Title Page
+\thispagestyle{empty}
+	\begin{center}
+	\fontsize{18}{18}{\textsc{Yannis B\"ahni}}
+	\rule{\linewidth}{0.5mm} \\[0.4cm]
+	\fontsize{60}{60}{\textsc{Differential Topology and Differential Geometry with Applications to General Relativity}}\\
+	%\vspace{2mm}
+	%\fontsize{28}{28}{\textsc{In Applications and Examples}}
+	\rule{\linewidth}{0.5mm} \\[1.5cm]
+\end{center}
+\clearpage
+
+\chapter*{Preface}
+The process of writing this book started in autumn of 2018. The book is mainly based on the course notes of the course \emph{Differential Geometry I} and \emph{Differential Geometry II} held by \emph{Prof. Dr. Will J. Merry} at \emph{ETH Zurich} in the autumn semester 2018 and spring semester 2019, I visited. They can be found here:
+\begin{center}
+	\href{https://www.merry.io/differential-geometry/}{https://www.merry.io/differential-geometry/}
+\end{center}
+Moreover, the part concerning general relativity, is freely taken from the course \emph{General Relativity} taught by \emph{Prof. Dr. Renato Renner} at ETH Zurich in the autumn semester 2018.\\
+\\
+\noindent Winterthur, \hfill Yannis B\"ahni\\
+September 1, 2018
 \tableofcontents
 
 \mainmatter
 
 %\input{constructions.tex}
 \input{1_differential_topology.tex}
+\input{2_differential_geometry.tex}
+\input{3_general_relativity.tex}
 
 %Appendix
 \appendix
 \begin{appendix}
+
 \end{appendix}
-
-
-
-
-%\chapter{Set Theory}
-%\section*{Basic Concepts}
-
-%\begin{problem}
-%	Let $n \in \mathbb{N}$ and $a_{kj} \in \mathbb{C}$ for $k = 0,\dots,n + 1$, $j = 0,\dots,n$. Show that
-%	\begin{equation*}
-%		\sum_{k = 0}^{n+1}\sum_{j = 0}^n a_{kj} = \sum_{0 \leq k \leq j \leq n}a_{kj} + \sum_{0 \leq j < k \leq n+1} a_{kj}.
-%	\end{equation*}
-%\end{problem}
 
 \printbibliography
 \end{document}

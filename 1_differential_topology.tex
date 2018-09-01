@@ -1,22 +1,6 @@
 \chapter{Differential Topology}
-\section*{Smooth Manifolds}
 
-\begin{example}[$n$-Spheres]
-	Let $n \in \omega$. If $n = 0$, we have that $\mathbb{S}^0 = \cbr{\pm 1}$. It is easily seen that $\mathbb{S}^0$ is a smooth manifold of dimension $0$. Let $n \geq 1$. Define $N := e_{n + 1}$ and $S := -e_{n + 1}$, where $e_{n + 1}$ denotes the $n + 1$-th standard basis vector of $\mathbb{R}^{n + 1}$. Moreover, set
-	\begin{equation*}
-		U_+ := \mathbb{S}^n \setminus S \qquad \text{and} \qquad U_- := \mathbb{S}^n \setminus N.
-	\end{equation*}
-	Then $U_+$ and $U_-$ are open subsets of $\mathbb{S}^n$, the upper and lower hemisphere, respectively. Then the functions $\varphi_\pm : U_\pm \to \mathbb{R}^n$ defined by
-	\begin{equation*}
-		\varphi_\pm(x) := \frac{1}{1 \pm x_{n + 1}}(x_1,\dots,x_n),
-	\end{equation*}
-	\noindent are homeomorphisms. Indeed, one can check that $\psi_\pm : \mathbb{R}^n \to U_\pm$ defined by
-	\begin{equation*}
-		\psi_\pm(x) := \del[4]{\frac{2x}{1 + \abs[0]{x}^2}, \frac{\pm(1 - \abs[0]{x}^2)}{1 + \abs[0]{x}^2}} 
-	\end{equation*}
-	\noindent is a continuous inverse for $\varphi_+$ and $\varphi_-$, respectively. We claim that $\cbr[0]{(U_\pm,\varphi_\pm)}$ is a smooth atlas for $\mathbb{S}^n$. Clearly, $\mathbb{S}^n$ is covered by the two charts. Next we have to calculate the transition functions $\varphi_\mp \circ \varphi^{-1}_\pm = \varphi_\mp \circ \psi_\pm : \varphi_\pm(U_+ \cap U_-) \to \varphi_\mp(U_+ \cap U_-)$. It is easy to see that $\varphi_\pm(U_+ \cap U_-) = \mathbb{R}^n \setminus \cbr{0}$ and that
-	\begin{equation*}
-		\varphi_\mp \circ \psi_\pm = \frac{x}{\abs{x}^2},
-	\end{equation*}
-	\noindent which is smooth. Since $\mathbb{S}^n$ is Hausdorff as a metric space and as a subspace of a second countable space, itself second countable, $\mathbb{S}^n$ equipped with the smooth structure induced by the smooth atlas constructed above, is a smooth manifold of dimension $n$.
-\end{example}
+\input{the_category_of_smooth_manifolds.tex}
+\input{the_tangent_bundle.tex}
+\input{the_cotangent_bundle.tex}
+\input{tensor_bundles_and_tensor_fields.tex}
